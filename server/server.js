@@ -3,11 +3,14 @@ const dotenv = require("dotenv");
 const connectDB = require("./config/config");
 require("colors");
 const morgan = require("morgan");
-import cors from 'cors';
+const cors = require('cors');
+
+const app = express();  
 
 app.use(cors({
-  orgin:["https://fullstack-pizza.netlify.app"]
+  origin: ["https://fullstack-pizza.netlify.app"]
 }));
+
 
 //config dotenv
 dotenv.config();
@@ -15,7 +18,7 @@ dotenv.config();
 //connection mongodb
 connectDB();
 
-const app = express();
+
 
 //middlewares
 app.use(express.json());
