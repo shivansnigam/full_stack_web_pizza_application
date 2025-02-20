@@ -8,7 +8,9 @@ const cors = require('cors');
 const app = express();  
 
 app.use(cors({
-  origin: ["https://fullstack-pizza.netlify.app"]
+  origin: "*",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
 }));
 
 
