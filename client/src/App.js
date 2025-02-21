@@ -13,7 +13,7 @@ import Login from "./screens/Login";
 import OrderScreen from "./screens/OrderScreen";
 import AdminScreen from "./screens/AdminScreen";
 import MobileFooter from "./components/MobileFooter";
-import AppLoader from "./components/AppLoader"; 
+import AppLoader from "./components/AppLoader"; // Loader component import kiya
 
 function App() {
   const [loading, setLoading] = useState(true);

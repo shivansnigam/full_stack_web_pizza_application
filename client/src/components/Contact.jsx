@@ -3,38 +3,24 @@ import { Container, Row, Col, Table, Image } from "react-bootstrap";
 import { FiPhoneCall } from "react-icons/fi";
 import { ImMobile } from "react-icons/im";
 import { AiOutlineMail } from "react-icons/ai";
+
 const Contact = () => {
   return (
     <>
       <Container style={{ marginTop: "50px" }}>
         <Row>
           <Col md={6}>
-            <h1>Techinfo YT Pizza Shop</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-              nostrum magni voluptatem perferendis dolorum nisi architecto
-              maxime voluptas exercitationem. Omnis, iure laudantium eveniet
-              voluptas corrupti deserunt minima. Omnis dolore unde, esse magnam
-              animi nesciunt velit impedit eveniet voluptates beatae libero
-              laboriosam soluta dolorem odio delectus nisi suscipit quaerat
-              repudiandae ratione? Cum fugit inventore porro, ipsum quas
-              voluptas? Optio assumenda ut rem totam ea, sequi consequuntur eos
-              magnam asperiores fugiat repudiandae dolor rerum praesentium a
-              deleniti doloribus exercitationem officiis odio iure quis minus
-              omnis quisquam cumque aperiam. Dolorum sed fugit voluptates vel
-              quia sit molestias. Voluptas sint at maxime saepe, fuga
-              exercitationem incidunt eveniet esse laudantium itaque dolores
-              reiciendis nihil quia iste minus minima quas ut doloremque
-              delectus reprehenderit quo voluptate molestiae omnis earum. Nemo
-              corporis possimus, ea animi quis ipsam, dolorem facere eum sint
-              adipisci aperiam odit repellendus inventore qui eius magnam cumque
-              iste, sit maiores iusto modi distinctio reiciendis. Voluptatem
-              omnis nam iste culpa, a pariatur facere debitis mollitia impedit
-              ea, similique iusto veritatis ab. Eum sint possimus facilis
-              praesentium nostrum iure voluptatem, explicabo dolorum, illum
-              maxime corrupti itaque esse aspernatur voluptates, in officiis
-              temporibus obcaecati. Sunt ad velit beatae deserunt ab iure
-              veritatis modi dolorum? Quisquam, reiciendis iusto.
+            <h1 style={{ fontFamily: "cursive", color: "#D35400" }}>
+              🍕 Techinfo YT Pizza Shop
+            </h1>
+            <p style={{ fontFamily: "Georgia, serif", fontSize: "18px", color: "#444" }}>
+              Welcome to **Techinfo YT Pizza Shop**, where **every slice is a masterpiece**!  
+              Our pizzas are made with **love, passion, and fresh ingredients** to satisfy your cravings.  
+              Whether you want a **classic Margherita, a cheesy Pepperoni, or a spicy Peri-Peri**,  
+              we’ve got something delicious for you!  
+              <br />  
+              **Need assistance?** Our team is here to make your pizza experience unforgettable!  
+              Contact us for orders, customizations, or just to say hello. 🍕🔥  
             </p>
 
             <Table striped bordered hover className="text-center">
@@ -65,15 +51,15 @@ const Contact = () => {
                     <AiOutlineMail />
                   </td>
                   <td>Email</td>
-                  <td>Help@urdomain.com</td>
+                  <td>help@techpizzashop.com</td>
                 </tr>
               </tbody>
             </Table>
           </Col>
           <Col md={6}>
             <Image
-              src="images/farmhouse.jpg"
-              style={{ width: "100%", height: "100%" }}
+              src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              style={{ width: "100%", height: "100%", borderRadius: "15px", boxShadow: "5px 5px 15px rgba(0,0,0,0.2)" }}
             />
           </Col>
         </Row>

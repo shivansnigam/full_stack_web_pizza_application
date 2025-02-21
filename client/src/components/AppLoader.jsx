@@ -1,19 +1,26 @@
-import React, { useState, useEffect } from "react";
-import "./AppLoader.css"; // Custom CSS for styling
+import React, { useEffect } from "react";
+import "./AppLoader.css"; // Custom CSS
 
 const AppLoader = ({ onComplete }) => {
   useEffect(() => {
-    // Simulate loading time (2.5s)
-    setTimeout(() => {
-     
-    }, 2500);
+    // Simulate loading time (3s)
+    const timer = setTimeout(() => {
+       
+    }, 3000);
+    return () => clearTimeout(timer);
   }, [onComplete]);
 
   return (
     <div className="loader-container">
-      <div className="pizza-loader">
-        🍕 Loading your delicious pizzas...
+      <div className="oven">
+        <div className="pizza">
+          <div className="cheese"></div>
+          <div className="pepperoni pepperoni1"></div>
+          <div className="pepperoni pepperoni2"></div>
+          <div className="pepperoni pepperoni3"></div>
+        </div>
       </div>
+      <p className="loading-text">Baking your delicious pizza... 🍕🔥</p>
     </div>
   );
 };
