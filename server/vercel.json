@@ -11,5 +11,10 @@
       "src": "/(.*)",
       "dest": "server.js"
     }
-  ]
+  ],
+   "env": {
+    "NODE_ENV": "production",
+    "PORT": "8080",
+    "MONGO_URI": "mongodb+srv://shivanshunigam18111999:5CTWxnuh5rqpiZmI@cluster0.zkkqjjp.mongodb.net/pizzashop"
+  }
 }
